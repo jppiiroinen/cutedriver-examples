@@ -1,0 +1,28 @@
+
+
+<parameters>
+
+	<!-- see templates and defaults folders for default values -->
+
+	<sut id="sut_qt" template="qt">
+		<!-- use default values -->
+	</sut>
+
+	<sut id="sut_one" template="qt">
+		<parameter name="qttas_server_ip" value="127.0.0.1" />
+		<parameter name="qttas_server_port" value="45535" />
+	</sut>
+
+	<sut id="sut_two" template="qt">
+		<parameter name="qttas_server_ip" value="127.0.0.1" />
+		<parameter name="qttas_server_port" value="35535" />
+	</sut>
+
+  <!-- Add SUT configurations here. If Sut has specific configurations add them to config ini -->
+	<!-- Use Sut id as section for configuration -->
+
+	<!-- overload default behaviours parameter (see generic.xml in defaults folder) -->
+	<!-- parameter name="tmp_folder" value="C:\tdriver\temp_folder"/ -->
+	<parameter name="behaviours" value="behaviours.xml"/>
+
+</parameters>
